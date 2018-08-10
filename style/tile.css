@@ -1,0 +1,47 @@
+a, a:hover{
+	color: whitesmoke;
+}
+
+a:hover{
+	text-decoration: none;
+}
+
+body{
+	word-wrap: break-word;
+}
+
+div.tile{
+	background-color: grey;
+	border-radius: 15px;
+	height: 100%;
+}
+
+div.tile-container{
+	padding: 5px;
+}
+
+div.tile-description{
+	text-align: center; 
+}
+
+div.tile-description p{
+	margin-bottom: 0px;
+}
+
+div.tile-img{
+	height:156px;
+}
+
+div.tile-img img{
+	height: 128px;
+	width: 128px;
+	max-width: 95%;
+	display: block;
+	margin: 0px auto 14px auto;
+}
+
+div.tile-title{
+	text-align: center;
+	text-decoration: none;
+	margin-top: -15px;
+}
