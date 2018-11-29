@@ -26,10 +26,18 @@
 					<a href="/?logout=true" class="btn btn-secondary" roll="button">logout</a>
 				</div>
 			</div>
+
+            <?php
+                include('include/newSite.php');
+            ?>
+
+            <input type="text" id="siteSearch" class="form-control" />
+
+            <br/><br/>
+
             <div id="sites">
-			    <?php
-				    include('include/newSite.php');
-				    include('include/siteCards.php');
+                <?php
+                    include('include/siteCards.php');
 			    ?>
             </div>
 

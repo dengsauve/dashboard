@@ -26,7 +26,7 @@ echo '<div class="row">';
 foreach($sites as $key=>$site){
     echo "<div class='col-6 col-sm-4 col-md-3 col-lg-3 col-xl-2 tile-container'>\n";
     echo "\t<div class='tile'>\n";
-    echo "\t\t<a href='" . $site['site'] . "' target='_blank' title='" . $site['description'] . "' data-toggle='tooltip' data-placement='top'>\n";
+    echo "\t\t<a href='" . htmlspecialchars($site['site'], ENT_QUOTES) . "' target='_blank' title='" . htmlspecialchars($site['description'], ENT_QUOTES) . "' data-toggle='tooltip' data-placement='top'>\n";
     echo "\t\t\t<div class='tile-img'>\n";
     echo "\t\t\t\t<img src='" . $site['image'] . "' onerror='this.style.display=\"none\"' />\n";
     echo "\t\t\t</div>\n";
@@ -37,5 +37,5 @@ foreach($sites as $key=>$site){
     echo "\t</div>\n";
     echo "</div>\n";
 }
-        
+
 echo '</div>';

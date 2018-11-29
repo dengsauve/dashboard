@@ -4,10 +4,10 @@ $(function () {
 
 $("#epochIn").on("input", function(){
     var epoch = parseInt($(this).val());//+ (new Date().getTimezoneOffset() * -1); //for timeZone
-    
+
     if (epoch < 10000000000)
-        epoch *= 1000;   
-    
+        epoch *= 1000;
+
     var textDate = new Date(epoch);
     $("#epochOut").html(textDate);
 });
@@ -36,4 +36,26 @@ $("#commentIn").on("input", function(){
     $("#commentHtmlOut").html(htmlComment);
     $("#commentCssOut").html(cssComment);
     $("#commentHashOut").html(hashComment);
+});
+
+$("#siteSearch").on('input', function(){
+    // Grab search term
+    $search = $(this).val().toLowerCase();
+    console.log($search);
+
+    // Loop through all tiles
+    $(".tile").each(function( index ){
+        // reference tile and grab title
+        $tile = $(this);
+        $title = $tile.find('.tile-title p').text().toLowerCase();
+
+        if( $title.indexOf($search) >=0 )
+        {
+            $tile.removeClass("d-none");
+        }
+        else
+        {
+            $tile.addClass("d-none");
+        }
+    });
 });
