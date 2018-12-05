@@ -51,11 +51,11 @@ $("#siteSearch").on('input', function(){
 
         if( $title.indexOf($search) >=0 )
         {
-            $tile.removeClass("d-none");
+            $tile.show();
         }
         else
         {
-            $tile.addClass("d-none");
+            $tile.hide();
         }
     });
 });
