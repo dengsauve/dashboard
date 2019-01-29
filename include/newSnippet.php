@@ -21,9 +21,9 @@
 					</div>
 					<div class="form-group">
 						<label for="code">Code:</label>
-						<textarea class="form-control" rows="5"></textarea>
+						<textarea class="form-control" rows="5" name="body"></textarea>
 					</div>
-					<button type="submit" class="btn btn-primary">Submit</button>
+					<input type="submit" class="btn btn-primary" value="Add Snippet" name="submit" />
 				</div>
 			</form>
     </div>

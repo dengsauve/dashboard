@@ -1,5 +1,5 @@
 <?php
-	
+	require('include/newSnippetLogic.php');
 ?>
 <!DOCTYPE html>
 <html>
