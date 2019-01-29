@@ -1,0 +1,10 @@
+{
+    "snippets": [
+        {
+            "name": "Hello There",
+            "description": "Print out 'Hello There' in Ruby",
+            "body": "#!/usr/bin/ruby\n\nputs 'Hello There'",
+            "language": "ruby",
+        }
+    ]
+}
