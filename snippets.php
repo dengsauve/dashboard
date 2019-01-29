@@ -19,7 +19,17 @@
 			
 			<?php require('include/menu.php'); ?>
 
-			
+			<?php require('include/newSnippet.php'); ?>
+
+			<div class="row">
+				<!-- Button trigger modal -->
+				<div class="col-12">
+					<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+						Add Snippet
+					</button>
+				</div>
+			</div>
+			<br/>
 
 			<?php require('include/snippetBlocks.php'); ?>
 			
